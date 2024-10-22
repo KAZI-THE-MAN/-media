@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap:10px;
+            
+        }
+        .box{
+            background-color: azure;
+            border: 1vw solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        .box1{
+            width:200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 5px solid aliceblue;
+        }
+
+        @media screen  and (max-width:576px){
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>First box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ea autem adipisci delectus praesentium dicta expedita sapiente voluptatibus laborum ipsa qui pariatur, repudiandae officia, alias veritatis quo nisi quidem aut?</p>
+        </div>
+        <div class="box">
+            <h3>Second box</h3>
+            <p>Numquam suscipit ipsum magni eveniet, temporibus accusantium. Ab quae amet provident, alias rerum dolorem obcaecati tempore eius repudiandae ipsum harum impedit, asperiores totam ullam iusto, aliquam debitis! Nam, quidem illum?</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box1">item- 1</div>
+        <div class="box1">item- 2</div>
+        <div class="box1">item- 3</div>
+        <div class="box1">item- 4</div>
+        <div class="box1">item- 5</div>
+        <div class="box1">item- 6</div>
+        <div class="box1">item- 7</div>
+        <div class="box1">item- 8</div>
+        <div class="box1">item- 9</div>
+        <div class="box1">item- 10</div>
+        <div class="box1">item- 11</div>
+        <div class="box1">item- 12</div>
+        <div class="box1">item- 13</div>
+        <div class="box1">item- 14</div>
+        <div class="box1">item- 15</div>
+        <div class="box1">item- 16</div>
+        <div class="box1">item- 17</div>
+        <div class="box1">item- 18</div>
+        <div class="box1">item- 19</div>
+        <div class="box1">item- 20</div>
+    </div>
+</body>
+</html>
